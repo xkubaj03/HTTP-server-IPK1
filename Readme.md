@@ -2,34 +2,34 @@
 ## Josef Kuba
 
 ## Popis:
-Úkolem projektu bylo vytvoøit server komunikující pomocí HTTP protokolu, kterı bude odpovídat na jednoduché poadavky(hostname, cpu-name a load).
+Ãškolem projektu bylo vytvoÅ™it server komunikujÃ­cÃ­ pomocÃ­ HTTP protokolu, kterÃ½ bude odpovÃ­dat na jednoduchÃ© poÅ¾adavky(hostname, cpu-name a load).
 
-## Pouití
-Server spustíme pomocí pøíkazu: ./hinfosvc [èíslo_portu] [&]
-Èíslo portu je povinnı parametr.
-Ampersand & je voliterlnı parametr kterım spustíme server na pozadí. 
-V tomto pøípadì se server nevypíná ctrl + c, ale pomocí pøíkazu kill [èíslo_procesu].
-Èíslo procesu je vypsáno po spuštìní serveru.
+## PouÅ¾itÃ­
+Server spustÃ­me pomocÃ­ pÅ™Ã­kazu: ./hinfosvc [ÄÃ­slo_portu] [&]
+ÄŒÃ­slo portu je povinnÃ½ parametr.
+Ampersand & je voliterlnÃ½ parametr kterÃ½m spustÃ­me server na pozadÃ­. 
+V tomto pÅ™Ã­padÄ› se server nevypÃ­nÃ¡ ctrl + c, ale pomocÃ­ pÅ™Ã­kazu kill [ÄÃ­slo_procesu].
+ÄŒÃ­slo procesu je vypsÃ¡no po spuÅ¡tÄ›nÃ­ serveru.
 
-Klient mùe vyuít tøi typy dotazù: hostname, cpu-name a load.
-Hostname vrací doménové jméno, cpu-name vrací název procesoru a load vrací zátì procesoru.
+Klient mÅ¯Å¾e vyuÅ¾Ã­t tÅ™i typy dotazÅ¯: hostname, cpu-name a load.
+Hostname vracÃ­ domÃ©novÃ© jmÃ©no, cpu-name vracÃ­ nÃ¡zev procesoru a load vracÃ­ zÃ¡tÄ›Å¾ procesoru.
 
-### Terminál:
-(12345 je èíslo portu na kterém server bìí)
-GET http://servername:12345/hostname
-curl http://servername:12345/hostname
-Vrací napø: merlin.fit.vutbr.cz
-GET http://servername:12345/cpu-name
-curl http://servername:12345/cpu-name
-Vrací napø: Intel(R) Xeon(R) CPU E5-2640 0 @ 2.50GHz
-GET http://servername:12345/load
-curl http://servername:12345/load
-Vrací napø: 20%
-### Webovı prohlíeè:
+### TerminÃ¡l:
+(12345 je ÄÃ­slo portu na kterÃ©m server bÄ›Å¾Ã­)  
+GET http://servername:12345/hostname  
+curl http://servername:12345/hostname  
+VracÃ­ napÅ™: merlin.fit.vutbr.cz  
+GET http://servername:12345/cpu-name  
+curl http://servername:12345/cpu-name  
+VracÃ­ napÅ™: Intel(R) Xeon(R) CPU E5-2640 0 @ 2.50GHz  
+GET http://servername:12345/load  
+curl http://servername:12345/load  
+VracÃ­ napÅ™: 20%  
+### WebovÃ½ prohlÃ­Å¾eÄ:
 
-http://servername:12345/hostname
-Vrací napø: merlin.fit.vutbr.cz
-http://servername:12345/cpu-name
-Vrací napø: Intel(R) Xeon(R) CPU E5-2640 0 @ 2.50GHz
-http://servername:12345/load 
-Vrací napø: 20%
+http://servername:12345/hostname  
+VracÃ­ napÅ™: merlin.fit.vutbr.cz  
+http://servername:12345/cpu-name  
+VracÃ­ napÅ™: Intel(R) Xeon(R) CPU E5-2640 0 @ 2.50GHz  
+http://servername:12345/load   
+VracÃ­ napÅ™: 20%  
