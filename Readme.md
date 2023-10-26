@@ -16,12 +16,15 @@ Hostname vrací doménové jméno, cpu-name vrací název procesoru a load vrac�
 
 ### Terminál:
 (12345 je číslo portu na kterém server běží)  
+
 GET http://servername:12345/hostname  
 curl http://servername:12345/hostname  
 Vrací např: merlin.fit.vutbr.cz  
+
 GET http://servername:12345/cpu-name  
 curl http://servername:12345/cpu-name  
 Vrací např: Intel(R) Xeon(R) CPU E5-2640 0 @ 2.50GHz  
+
 GET http://servername:12345/load  
 curl http://servername:12345/load  
 Vrací např: 20%  
@@ -29,7 +32,9 @@ Vrací např: 20%
 
 http://servername:12345/hostname  
 Vrací např: merlin.fit.vutbr.cz  
+
 http://servername:12345/cpu-name  
 Vrací např: Intel(R) Xeon(R) CPU E5-2640 0 @ 2.50GHz  
+
 http://servername:12345/load   
 Vrací např: 20%  
